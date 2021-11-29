@@ -29,7 +29,6 @@ const ScrollableTabView = createReactClass({
   propTypes: {
     tabBarPosition: PropTypes.oneOf(['top', 'bottom', 'overlayTop', 'overlayBottom', ]),
     initialPage: PropTypes.number,
-    keyboardShouldPersistTaps: PropTypes.oneOf(['never', 'always', 'handled',]),
     page: PropTypes.number,
     onChangeTab: PropTypes.func,
     onScroll: PropTypes.func,
@@ -195,7 +194,6 @@ const ScrollableTabView = createReactClass({
       directionalLockEnabled
       alwaysBounceVertical={false}
       keyboardDismissMode="on-drag"
-      keyboardShouldPersistTaps={this.props.keyboardShouldPersistTaps || 'always'}
       {...this.props.contentProps}
     >
         {scenes}
