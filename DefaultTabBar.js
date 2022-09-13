@@ -1,5 +1,4 @@
 const React = require('react');
-const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 const {
   StyleSheet,
@@ -10,17 +9,6 @@ const {
 const Button = require('./Button');
 
 const DefaultTabBar = createReactClass({
-  propTypes: {
-    goToPage: PropTypes.func,
-    activeTab: PropTypes.number,
-    tabs: PropTypes.array,
-    backgroundColor: PropTypes.string,
-    activeTextColor: PropTypes.string,
-    inactiveTextColor: PropTypes.string,
-    textStyle: Text.propTypes.style,
-    renderTab: PropTypes.func
-  },
-
   getDefaultProps() {
     return {
       activeTextColor: 'navy',
